@@ -10,4 +10,10 @@ class DrumKit {
     repeat() {
         let step = this.index % 8;
     }
+
+    start() {
+        setInterval(() => {
+            this.repeat();
+        }, 1000)
+    }
 }
