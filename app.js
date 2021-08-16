@@ -4,5 +4,10 @@ class DrumKit {
         this.kickAudio = document.querySelector(".kick-sound");
         this.clapAudio = document.querySelector(".clap-sound");
         this.hihatAudio = document.querySelector(".hihat-sound");
+        this.index = 0;
+    }
+
+    repeat() {
+        let step = this.index % 8;
     }
 }
