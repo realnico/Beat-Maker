@@ -37,6 +37,10 @@ svg {
     background-color: rgb(168, 204, 147);
 }
 
+.kick-pad.active {
+    background-color: rgb(104, 170, 170);
+}
+
 .sequencer {
     display: flex;
     min-height: 100vh;
@@ -77,4 +81,8 @@ svg {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+.pad {
+    transition: all 0.5 ease;
 }
