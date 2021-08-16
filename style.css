@@ -16,6 +16,15 @@ svg {
     pointer-events: none;
 }
 
+button {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1ch;
+}
+
+.pad {
+    transition: all 0.5 ease;
+}
+
 .kick-pad,
 .clap-pad,
 .hihat-pad {
@@ -38,7 +47,15 @@ svg {
 }
 
 .kick-pad.active {
-    background-color: rgb(104, 170, 170);
+    background-color: rgb(38, 168, 168);
+}
+
+.clap-pad.active {
+    background-color: rgb(177, 51, 170);
+}
+
+.hihat-pad.active {
+    background-color: rgb(108, 175, 69);
 }
 
 .sequencer {
@@ -81,8 +98,15 @@ svg {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+    border-radius: 0.5rem;
 }
 
-.pad {
-    transition: all 0.5 ease;
+.play-btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: rgb(97, 97, 97);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
