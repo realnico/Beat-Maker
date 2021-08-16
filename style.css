@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -36,6 +37,7 @@ h1 {
     height: 5rem;
     margin: 1rem 0.5rem;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 .kick-pad {
