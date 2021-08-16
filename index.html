@@ -41,7 +41,7 @@
       <div class="clap-track">
         <div class="controls">
           <h1>Clap</h1>
-          <button data-track="0" class="mute clap-volume">
+          <button data-track="1" class="mute clap-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="clap-select" id="clap-select">
@@ -61,8 +61,30 @@
           <div class="pad clap-pad b7"></div>
         </div>
       </div>
+      <div class="hihat-track">
+        <div class="controls">
+          <h1>Hi-Hat</h1>
+          <button data-track="2" class="mute hihat-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="hihat-select" id="hihat-select">
+            <option value="./Sounds/hihat-analog.wav">Hi-Hat Analog</option>
+            <option value="./Sounds/hihat-808.wav">Hi-Hat 808</option>
+            <option value="./Sounds/hihat-digital.wav">Hi-Hat Digital</option>
+          </select>
+        </div>
+        <div class="hihat">
+          <div class="pad hihat-pad b0"></div>
+          <div class="pad hihat-pad b1"></div>
+          <div class="pad hihat-pad b2"></div>
+          <div class="pad hihat-pad b3"></div>
+          <div class="pad hihat-pad b4"></div>
+          <div class="pad hihat-pad b5"></div>
+          <div class="pad hihat-pad b6"></div>
+          <div class="pad hihat-pad b7"></div>
+        </div>
+      </div>
     </div>
-
     <script src="./app.js"></script>
   </body>
 </html>
