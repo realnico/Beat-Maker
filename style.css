@@ -21,6 +21,10 @@ button {
     letter-spacing: 0.1ch;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 .pad {
     transition: all 0.5 ease;
 }
