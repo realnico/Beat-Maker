@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2ch;
 }
 
 i,
@@ -34,4 +35,20 @@ svg {
 
 .hihat-pad {
     background-color: rgb(168, 204, 147);
+}
+
+.kick,
+.clap,
+.hihat {
+    display: flex;
+}
+
+.hihat-track,
+.clap-track,
+.kick-track {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 5rem;
 }
