@@ -37,6 +37,14 @@ svg {
     background-color: rgb(168, 204, 147);
 }
 
+.sequencer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .kick,
 .clap,
 .hihat {
@@ -50,5 +58,5 @@ svg {
     align-items: center;
     width: 70%;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
