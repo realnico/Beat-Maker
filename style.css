@@ -14,3 +14,24 @@ i,
 svg {
     pointer-events: none;
 }
+
+.kick-pad,
+.clap-pad,
+.hihat-pad {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.kick-pad {
+    background-color: rgb(147, 204, 204);
+}
+
+.clap-pad {
+    background-color: rgb(209, 129, 205);
+}
+
+.hihat-pad {
+    background-color: rgb(168, 204, 147);
+}
