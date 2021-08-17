@@ -9,6 +9,14 @@ class DrumKit {
         this.playButton = document.querySelector(".play-btn");
     }
 
+    activePad() {
+        if (this.classList.contains("active")) {
+            this.classList.remove("active")
+        } else {
+            this.classList.toggle("active");
+        }
+    }
+
     repeat() {
         let step = this.index % 8;
         const activeBar = document.querySelectorAll(`.b${step}`);
@@ -25,6 +33,10 @@ class DrumKit {
 }
 
 const drumKits = new DrumKit();
+
+drumKits.pads.forEach(pad => {
+    pad.addEventListener("click", drumKits.activePad);
+})
 
 drumKits.playButton.addEventListener("click", () => {
     drumKits.start();
