@@ -37,6 +37,10 @@ select {
   text-align: center;
 }
 
+.mute.active {
+  background-color: rgb(167, 165, 165);
+}
+
 .pad {
   transition: all 0.5 ease;
 }
