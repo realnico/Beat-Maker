@@ -1,133 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-    letter-spacing: 0.2ch;
+  letter-spacing: 0.2ch;
 }
 
 i,
 svg {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 button {
-    letter-spacing: 0.1ch;
+  letter-spacing: 0.1ch;
 }
 
 h1 {
-    font-size: 4rem;
-    color: rgb(37, 37, 37);
+  font-size: 4rem;
+  color: rgb(37, 37, 37);
 }
 
 select {
-    font-weight: 300;
-    padding: 1rem;
-    border: none;
-    background: rgb(194, 194, 194);
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border-radius: 0.5rem;
-    text-align: center;
+  font-weight: 300;
+  padding: 1rem;
+  border: none;
+  background: rgb(194, 194, 194);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
 .pad {
-    transition: all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
 .kick-pad,
 .clap-pad,
 .hihat-pad {
-    width: 5rem;
-    height: 5rem;
-    margin: 1rem 0.5rem;
-    margin-left: 1rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 .kick-pad {
-    background-color: rgb(147, 204, 204);
+  background-color: rgb(147, 204, 204);
 }
 
 .clap-pad {
-    background-color: rgb(209, 129, 205);
+  background-color: rgb(209, 129, 205);
 }
 
 .hihat-pad {
-    background-color: rgb(168, 204, 147);
+  background-color: rgb(168, 204, 147);
 }
 
 .kick-pad.active {
-    background-color: rgb(38, 168, 168);
+  background-color: rgb(38, 168, 168);
 }
 
 .clap-pad.active {
-    background-color: rgb(177, 51, 170);
+  background-color: rgb(177, 51, 170);
 }
 
 .hihat-pad.active {
-    background-color: rgb(108, 175, 69);
+  background-color: rgb(108, 175, 69);
 }
 
 .sequencer {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .kick,
 .clap,
 .hihat {
-    display: flex;
-    margin-left: 5rem;
+  display: flex;
+  margin-left: 5rem;
 }
 
 .hihat-track,
 .clap-track,
 .kick-track {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-between;
-    margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 7rem;
 }
 
 .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    margin: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
 }
 
 .controls button {
-    padding: 1rem;
-    border: none;
-    background: rgb(97, 97, 97);
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  background: rgb(97, 97, 97);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 0.5rem;
 }
 
 .play-btn {
-    padding: 1rem 4rem;
-    font-size: 1.5rem;
-    background: rgb(97, 97, 97);
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-top: 3rem;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background: rgb(97, 97, 97);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
 }
