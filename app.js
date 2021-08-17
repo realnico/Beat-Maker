@@ -6,13 +6,14 @@ class DrumKit {
         this.hihatAudio = document.querySelector(".hihat-sound");
         this.index = 0;
         this.bpm = 150;
+        this.playButton = document.querySelector(".play-btn");
     }
 
     repeat() {
         let step = this.index % 8;
         const activeBar = document.querySelectorAll(`.b${step}`);
         this.index++;
-        /* console.log(`Step ${step} and Index ${this.index}`); */
+        console.log(`Step ${step} and Index ${this.index}`);
     }
 
     start() {
@@ -25,4 +26,6 @@ class DrumKit {
 
 const drumKits = new DrumKit();
 
-drumKits.start();
+drumKits.playButton.addEventListener("click", () => {
+    drumKits.start();
+});
