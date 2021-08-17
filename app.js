@@ -9,10 +9,11 @@ class DrumKit {
         this.hihatAudio = document.querySelector(".hihat-sound");
         this.index = 0;
         this.bpm = 150;
-        this.playButton = document.querySelector(".play-btn");
+        this.playBtn = document.querySelector(".play-btn");
         this.isPlaying = null;
         this.selects = document.querySelectorAll("select");
         this.muteBtns = document.querySelectorAll(".mute");
+        this.tempoSlider = document.querySelector(".tempo-slider");
     }
 
     activePad() {
@@ -119,7 +120,19 @@ class DrumKit {
             }
         }
     }
-}
+
+    changeTempo(e) {
+        const tempoText = document.querySelector(".tempo-nr");
+        this.bpm = e.target.value;
+        tempoText.innerHTML = `${this.bpm}`;
+    }
+
+    updateTempo(e) {
+        clearInterval(this.isPlaying);
+        this.isPlaying = null;
+        const playBtn = document.querySelector(".play-btn");
+      }
+    }
 
 const drumKits = new DrumKit();
 
@@ -132,11 +145,11 @@ drumKits.pads.forEach(pad => {
     });
 });
 
-drumKits.playButton.addEventListener("click", () => {
+drumKits.playBtn.addEventListener("click", () => {
     drumKits.start();
 });
 
-drumKits.playButton.onclick = function() {
+drumKits.playBtn.onclick = function() {
     if(this.innerHTML == "Stop") {
         this.innerHTML = "Play";
         this.classList.add("active");
@@ -157,3 +170,11 @@ drumKits.muteBtns.forEach(btn => {
         drumKits.mute(e);
     });
 })
+
+drumKits.tempoSlider.addEventListener("input", (e) => {
+    drumKits.changeTempo(e);
+});
+
+drumKits.tempoSlider.addEventListener("input", (e) =>  {
+    drumKits.updateTempo(e);
+});
