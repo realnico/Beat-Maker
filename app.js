@@ -5,18 +5,21 @@ class DrumKit {
         this.clapAudio = document.querySelector(".clap-sound");
         this.hihatAudio = document.querySelector(".hihat-sound");
         this.index = 0;
+        this.bpm = 150;
     }
 
     repeat() {
         let step = this.index % 8;
-        console.log(`Step ${step} and Index ${this.index}`);
+        const activeBar = document.querySelectorAll(`.b${step}`);
         this.index++;
+        /* console.log(`Step ${step} and Index ${this.index}`); */
     }
 
     start() {
+            const interval = (60/this.bpm) * 1000;
         setInterval(() => {
             this.repeat();
-        }, 1000)
+        }, interval)
     }
 }
 
