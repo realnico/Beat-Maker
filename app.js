@@ -23,7 +23,20 @@ class DrumKit {
 
         // Loop over the pads
         activeBar.forEach(bar => {
-            bar.style.animation = `playTrack 0.4s alternate ease-in-out`;
+            bar.style.animation = `playTrack 0.3s alternate ease-in-out 2`;
+            // Check if pads are active
+            if(bar.classList.contains("active")) {
+                // Check each sound
+                if(bar.classList.contains("kick-pad")) {
+                    this.kickAudio.play();
+                }
+                if(bar.classList.contains("clap-pad")) {
+                    this.clapAudio.play();
+                }
+                if(bar.classList.contains("hihat-pad")) {
+                    this.hihatAudio.play();
+                }
+            }
         });
         this.index++;
         console.log(`Step ${step} and Index ${this.index}`);
