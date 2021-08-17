@@ -30,7 +30,7 @@ class DrumKit {
     }
 
     start() {
-            const interval = (60/this.bpm) * 1000;
+        const interval = (60/this.bpm) * 1000;
         setInterval(() => {
             this.repeat();
         }, interval)
@@ -41,7 +41,10 @@ const drumKits = new DrumKit();
 
 drumKits.pads.forEach(pad => {
     pad.addEventListener("click", drumKits.activePad);
-})
+    pad.addEventListener("animationend", function() {
+        this.style.animation = "";
+    });
+});
 
 drumKits.playButton.addEventListener("click", () => {
     drumKits.start();
