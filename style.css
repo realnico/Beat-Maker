@@ -25,6 +25,11 @@ h1 {
   color: rgb(37, 37, 37);
 }
 
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 select {
   font-weight: 300;
   padding: 1rem;
@@ -133,6 +138,22 @@ select {
   border-radius: 0.5rem;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background-color: rgb(66, 66, 66);
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 @keyframes playTrack {
