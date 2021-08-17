@@ -9,6 +9,8 @@ class DrumKit {
 
     repeat() {
         let step = this.index % 8;
+        console.log(`Step ${step} and Index ${this.index}`);
+        this.index++;
     }
 
     start() {
@@ -17,3 +19,7 @@ class DrumKit {
         }, 1000)
     }
 }
+
+const drumKits = new DrumKit();
+
+drumKits.start();

@@ -122,7 +122,7 @@ select {
 }
 
 .play-btn {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     font-size: 1.5rem;
     background: rgb(97, 97, 97);
     color: white;
